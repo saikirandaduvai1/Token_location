@@ -1,0 +1,37 @@
+GET http://localhost:3000/location/
+
+GET http://localhost:3000/city/
+
+GET http://localhost:3000/location/5/city/
+
+PUT http://localhost:3000/location/null/
+Content-Type: application/json
+{
+    "id":7,
+    "countryName":"british",
+    "stateName":"london",
+    "weatherSeason":"Rainy season",
+    "date":"2024-08-30"
+}
+
+POST http://localhost:3000/location/
+Content-Type: application/json
+{
+    "id":8,
+    "countryName":"INDIA",
+    "stateName":"TALANGANA",
+    "weatherSeason":"Summer season",
+    "date":"2024-04-20"
+}
+
+DELETE http://localhost:3000/location/null/
+
+
+POST http:/localhost:3000/city/
+Content-Type: application/json
+{
+    "cityName":"Warangal",
+    "placeName":"kakatiya toranm",
+    "areaNameORAreaNO":"XJ48+R52",
+    "locationId":1
+}
